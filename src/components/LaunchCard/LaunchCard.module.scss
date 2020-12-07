@@ -1,0 +1,105 @@
+.launches {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0px 2px 10px #0000001a; 
+    border-radius: 16px;
+    margin-top: 10px;
+    width: 1030px;
+    
+&__image {
+    width: 138px;
+    height: 138px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #eee;
+    &_inner {
+        height: 80px;
+        width: 80px;
+        object-fit: contain;
+        align-self: center;
+    }
+}
+&__content {
+   padding: 16px 30px 16px;
+   flex: 1;
+   &_icons {
+     display: flex;
+    flex-direction: column;
+    float: right;
+
+    &_link {
+        align-self: flex-end;
+    }
+    &_video {
+        color: #D50000;
+    }
+   }
+}
+
+&__items {
+    display: flex;
+    align-items: center;
+    &_title {
+        height: 25px;
+        margin-right: 12px;
+        line-height: 26px;
+        align-self: end;
+        &_number {
+            color:#BDBDBD;
+            font-weight: 500;
+            font-size: 22px;
+        }
+        &_name {
+            font-weight: 500;
+            font-size: 22px;
+        }
+    }
+    &_status {
+        width: 100px;
+        text-align: center;
+        height: 25px;
+        &_unknown {
+            background-color: #b3e5fc;
+            color: #42a5f5;
+            border-radius: 16px;
+            padding: 0 12px;
+        }
+        &_failure {
+            background-color: #ffcdd2;
+            color: #ef5350;
+            border-radius: 16px;
+            padding: 0 12px;
+        }
+        &_success {
+            background-color: #b2dfdb;
+            color: #26a69a;
+            border-radius: 16px;
+            padding: 0 12px;
+        }
+
+    }
+}
+&__date {
+    margin-top: 10px;
+    height: 15px;
+    color:#BDBDBD;
+    font-size: 12px;
+}
+&__text {
+    width: 530px;
+    margin-top: 5px;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    &:last-child {
+        width: 530px;
+        margin-top: 5px;
+    }
+}
+}

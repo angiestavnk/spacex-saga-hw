@@ -1,0 +1,14 @@
+.error {
+    display: flex;
+    justify-content: center;
+    padding-top: 160px;
+    align-items: center;
+    text-align: center;
+    &__text {
+        position: absolute;
+        margin-top: 420px;
+        font-weight: 500;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
