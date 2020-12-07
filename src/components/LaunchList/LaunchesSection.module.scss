@@ -1,0 +1,22 @@
+.title {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+    &::before,
+    &::after {
+        content: '';
+        border-top: 2px solid;
+        color: #cccccc;
+        margin: 0;
+        flex: 1 0 20px;
+    }
+    &__inner {
+        background: #cccccc;
+        border-radius: 16px;
+        color: black;
+        width: 190px;
+    }
+}
